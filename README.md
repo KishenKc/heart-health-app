@@ -64,13 +64,16 @@ Working on this project gave me valuable hands-on experience designing, building
 
 ## 📸 Application Screenshots
 
-<img width="403" height="753" alt="Logo" src="https://github.com/user-attachments/assets/480d40be-b296-44b0-984e-0fb55bef2837" />
-<img width="403" height="753" alt="dashboard" src="https://github.com/user-attachments/assets/66454436-29e6-481f-8414-982f70a37a65" />
-<img width="513" height="820" alt="vital-signs" src="https://github.com/user-attachments/assets/e94283ff-6f75-46c1-96ab-2c8f3ef0e4fe" />
-<img width="636" height="800" alt="risk" src="https://github.com/user-attachments/assets/8edfd00e-d85b-4d87-aaee-d94ea892c237" />
-<img width="410" height="748" alt="ai-health-Dr " src="https://github.com/user-attachments/assets/791ce35c-519a-45ec-a5dc-8852c6941778" />
-<img width="369" height="705" alt="emergency" src="https://github.com/user-attachments/assets/2e849d42-32e8-4691-b6b4-02ec46256477" />
-<img width="1440" height="900" alt="hospital-locator" src="https://github.com/user-attachments/assets/e315c649-32e3-4e11-8e65-3ce772e5f780" />
+<img width="350" height="654" alt="logo" src="https://github.com/user-attachments/assets/2b9f7ec2-e503-4eee-89aa-825293f0099e" />
+<img width="350" height="654" alt="dashboard" src="https://github.com/user-attachments/assets/e2cd2890-490a-4ab2-ac4f-cc1515e04915" />
+<img width="350" height="654" alt="vitals" src="https://github.com/user-attachments/assets/2fbfd433-a2c8-4a69-a502-6b8931945cf1" />
+<img width="350" height="654" alt="risk assessment" src="https://github.com/user-attachments/assets/9a1127b4-a221-4433-ae86-156fc177d15f" />
+<img width="350" height="654" alt="ai-assistant" src="https://github.com/user-attachments/assets/ca987c06-6b2c-4abf-afa9-945f3bfe41b7" />
+<img width="350" height="654" alt="emergency" src="https://github.com/user-attachments/assets/c1aa3546-3e04-4ddd-bbdf-30f3186bda70" />
+<img width="350" height="654" alt="hospital-locator" src="https://github.com/user-attachments/assets/351f8346-7239-4652-a1c2-669882937a5f" />
+
+
+
 
 
 ---
