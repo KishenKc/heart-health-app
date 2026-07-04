@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9FB"
+    tools:context=".LastAssessment">
+
+    <!-- ✅ Background Heartbeat Watermark -->
+    <ImageView
+        android:id="@+id/bgWatermarkResult"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:src="@drawable/baseline_monitor_heart_24"
+        android:alpha="0.10"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/heart_icon" />
+
+    <!-- ✅ Foreground Card with Details -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAssessmentResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnBackDashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Risk Level -->
+            <TextView
+                android:id="@+id/tvRiskLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Risk Level: -"
+                android:textColor="#1E3A8A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Risk Score -->
+            <TextView
+                android:id="@+id/tvRiskScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score: -"
+                android:textColor="#2C3E50"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Assessment Date -->
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: -"
+                android:textColor="#5A6A71"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Advice Text -->
+            <TextView
+                android:id="@+id/tvAdvice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advice: Maintain a balanced diet, exercise regularly, and check your vitals weekly."
+                android:textColor="#34495E"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ✅ Dashboard Button (Outlined Style) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackDashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textAllCaps="false"
+        android:textColor="#2E86DE"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:strokeColor="#2E86DE"
+        app:strokeWidth="2dp"
+        app:backgroundTint="#FFFFFF"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

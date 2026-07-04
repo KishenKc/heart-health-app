@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9FB"
+    tools:context=".AIresult">
+
+    <!-- ✅ Background Heartbeat Watermark -->
+    <ImageView
+        android:id="@+id/bgWatermarkAI"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:src="@drawable/baseline_monitor_heart_24"
+        android:alpha="0.10"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/heart_icon" />
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/aiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Activity Analysis 🤖"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- PATIENT DETAILS CARD -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/patientDetailsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/aiTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvPatientAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: -" />
+
+            <TextView
+                android:id="@+id/tvPatientGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: -" />
+
+            <TextView
+                android:id="@+id/tvPatientWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight: -" />
+
+            <TextView
+                android:id="@+id/tvPatientHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height: -" />
+
+            <TextView
+                android:id="@+id/tvPatientSmoker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smoker: -" />
+
+            <TextView
+                android:id="@+id/tvPatientHeartDisease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Disease: -" />
+
+            <TextView
+                android:id="@+id/tvPatientDiabetes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes: -" />
+
+            <TextView
+                android:id="@+id/tvPatientHypertension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hypertension: -" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- AI RESPONSE AREA -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_bg"
+        app:layout_constraintTop_toBottomOf="@id/patientDetailsCard"
+        app:layout_constraintBottom_toTopOf="@id/btnBackChat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/aiResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your AI analysis will appear here..."
+            android:textSize="16sp"
+            android:textColor="#2C3E50"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <!-- FIXED BACK BUTTON -->
+    <Button
+        android:id="@+id/btnBackChat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Dashboard"
+        android:textAllCaps="false"
+        android:backgroundTint="#007AFF"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingVertical="12dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

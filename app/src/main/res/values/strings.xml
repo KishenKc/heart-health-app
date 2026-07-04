@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application_java</string>
+    <string name="heart_icon">Heartbeat Icon</string>
+    <string name="app_logo">App Logo</string>
+</resources>
